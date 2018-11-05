@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#272c33"
+    tools:context="com.tianjistar.helppersion.activity.persion.BankCardActivity">
+
+    <include layout="@layout/top_black_noright"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="163dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="@dimen/dimen_20_dp"
+        android:layout_marginTop="@dimen/dimen_30_dp">
+
+        <ImageView
+            android:id="@+id/iv_bank"
+            android:layout_width="match_parent"
+            android:layout_height="161dp"
+            android:scaleType="fitXY"
+            android:background="#FF0033"
+            />
+
+        <ImageView
+            android:layout_marginTop="@dimen/dimen_25_dp"
+            android:layout_marginLeft="@dimen/dimen_21_dp"
+            android:id="@+id/iv_logo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            />
+        <TextView
+            android:id="@+id/tv_bank_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:lines="1"
+            android:layout_marginLeft="69dp"
+            android:layout_marginTop="@dimen/dimen_25_dp"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_bank_type_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:lines="1"
+            android:layout_marginLeft="69dp"
+            android:layout_marginTop="52dp"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_marginLeft="69dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="73dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:alpha="0.5"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:id="@+id/tv_bank_card_numx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="****   ****   ****"
+                android:textColor="@color/white"
+                android:layout_marginRight="24dp"
+                android:textSize="13dp"
+                />
+
+            <TextView
+                android:alpha="0.5"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:maxLength="4"
+                android:id="@+id/tv_bank_card_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1563"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:alpha="0.2"
+            android:layout_marginRight="22.5dp"
+            android:layout_marginLeft="22.5dp"
+            android:background="#ffffff"
+            android:layout_below="@+id/ll"
+            android:layout_marginTop="@dimen/dimen_5_dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0.5_dp"
+            android:id="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/tv_bank_card_jiebang"
+            android:layout_width="69dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bank_jiebang_card"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="22dp"
+            android:layout_marginBottom="12dp"
+            android:text="解绑"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_change_card"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimen_22_dp"
+        android:background="#343b45"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_44_dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:textColor="#bcbcbc"
+            android:drawablePadding="@dimen/dimen_13_dp"
+            android:drawableLeft="@drawable/add_chagecard"
+            android:text="更换银行卡"
+            android:paddingLeft="@dimen/dimen_17_dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"/>
+        <ImageView
+            android:layout_marginRight="@dimen/dimen_10_dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/add_cardback_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

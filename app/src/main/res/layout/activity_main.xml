@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/main_di"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.tianjistar.helppersion.activity.MainActivity">
+
+    <include layout="@layout/top_bar_imgcommom"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <com.ogaclejapan.smarttablayout.SmartTabLayout
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white"
+            app:stl_indicatorAlwaysInCenter="false"
+            app:stl_indicatorWithoutPadding="false"
+            app:stl_indicatorInFront="true"
+            app:stl_indicatorInterpolation="smart"
+            app:stl_indicatorGravity="bottom"
+            app:stl_indicatorColor="@color/main_color"
+            app:stl_indicatorThickness="3dp"
+            app:stl_indicatorWidth="30sp"
+            app:stl_overlineColor="#00000000"
+            app:stl_overlineThickness="0dp"
+            app:stl_underlineColor="#00000000"
+            app:stl_underlineThickness="0dp"
+            app:stl_dividerColor="#00000000"
+            app:stl_dividerThickness="0dp"
+            app:stl_defaultTabTextAllCaps="true"
+            app:stl_defaultTabTextColor="#686868"
+            app:stl_defaultTabTextSize="14sp"
+            app:stl_defaultTabTextHorizontalPadding="0dp"
+            app:stl_defaultTabTextMinWidth="0dp"
+            app:stl_distributeEvenly="true"
+            app:stl_clickable="true"
+            app:stl_titleOffset="10dp"
+            app:stl_drawDecorationAfterTab="false"
+            app:stl_customTabTextLayoutId="@layout/view_resource_text"
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e3e5e9"
+        />
+
+    <com.tianjistar.helppersion.view.DisallowParentTouchViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dimen_10_dp"
+        />
+
+</LinearLayout>

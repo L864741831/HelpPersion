@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55000000"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="46dp">
+            <ImageView
+                android:scaleType="centerInside"
+                android:id="@+id/iv_close"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_card_cancle"
+                android:layout_width="52dp"
+                android:layout_height="52dp" />
+            <TextView
+                android:textSize="18sp"
+                android:textColor="#040203"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请输入支付密码"/>
+        </RelativeLayout>
+        <TextView
+            android:background="#e1e1e1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <LinearLayout
+            android:layout_marginTop="@dimen/dimen_27_dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/ce_pwd"
+                android:textCursorDrawable="@drawable/add_card_cursor"
+                android:paddingLeft="@dimen/dimen_15_dp"
+                android:textColor="#adadad"
+                android:textSize="17.5dp"
+                android:hint="请您输入支付密码"
+                android:layout_marginLeft="17.5dp"
+                android:layout_marginRight="17.5dp"
+                android:background="@drawable/bg_redpassword"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_foget_pwd"
+                android:paddingBottom="@dimen/dimen_11_dp"
+                android:paddingTop="@dimen/dimen_11_dp"
+                android:paddingLeft="@dimen/dimen_18_dp"
+                android:paddingRight="@dimen/dimen_18_dp"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:textSize="15sp"
+                android:textColor="@color/main_color"
+                android:text="忘记密码"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btn_pwd_sure"
+                android:textSize="18sp"
+                android:textColor="@color/main_color"
+                android:text="确认"
+                android:layout_marginRight="17.5dp"
+                android:layout_marginLeft="17.5dp"
+                android:layout_marginBottom="20.5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="@drawable/pwd_sure"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

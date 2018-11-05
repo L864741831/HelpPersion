@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55000000"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#f4f4f4"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_man_layout"
+            android:layout_width="match_parent"
+            android:layout_height="52dp">
+
+            <TextView
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="#656565"
+                android:text="男"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d6d6d6"/>
+
+        <LinearLayout
+            android:id="@+id/ll_woman_layout"
+            android:layout_width="match_parent"
+            android:layout_height="52dp">
+
+            <TextView
+                android:id="@+id/pop_tv_nv"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="#656565"
+                android:text="女"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d6d6d6"/>
+
+        <LinearLayout
+            android:id="@+id/ll_secrecy_layout"
+            android:layout_width="match_parent"
+            android:layout_height="52dp">
+
+            <TextView
+                android:id="@+id/pop_tv_nan"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="#656565"
+                android:text="保密"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#b0b0b0"/>
+
+        <LinearLayout
+            android:id="@+id/ll_cancel_layout"
+            android:layout_width="match_parent"
+            android:layout_height="52dp">
+
+            <TextView
+                android:id="@+id/pop_tv_cancle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="#656565"
+                android:text="取消"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

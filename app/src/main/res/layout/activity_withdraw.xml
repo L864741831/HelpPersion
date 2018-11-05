@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/main_di"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/top_bar_commom"/>
+    <include layout="@layout/top_xian"/>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dimen_10_dp"
+        android:background="@drawable/bg_tixian"
+        android:layout_marginRight="@dimen/dimen_20_dp"
+        android:layout_marginLeft="@dimen/dimen_20_dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="78dp">
+
+        <TextView
+            android:paddingLeft="@dimen/dimen_21_dp"
+            android:paddingTop="@dimen/dimen_20_dp"
+            android:textSize="14dp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提现到"/>
+
+        <LinearLayout
+            android:paddingTop="@dimen/dimen_20_dp"
+            android:layout_marginLeft="@dimen/dimen_49_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_withdraw_bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中信银行(1236)"
+                android:textColor="#ff8200"
+                android:textSize="14sp" />
+            <TextView
+                android:paddingTop="10dp"
+                android:text="无限额，工作日24小时到账"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textSize="13sp"
+                android:textColor="#737373"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginRight="@dimen/dimen_20_dp"
+        android:layout_marginLeft="@dimen/dimen_20_dp"
+        android:background="@drawable/bg_tixian_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="319dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="@dimen/dimen_20_dp"
+            android:layout_marginLeft="@dimen/dimen_27_dp"
+            android:textSize="@dimen/dimen_14_dp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提现金额"/>
+        <LinearLayout
+            android:layout_marginTop="@dimen/dimen_25_dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginLeft="@dimen/dimen_27_dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_black"
+                android:text="¥"
+                android:textSize="29sp"
+                android:gravity="center"
+                />
+            <com.tianjistar.helppersion.view.widget.ClearEditText
+                android:id="@+id/et_money"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:inputType="numberDecimal"
+                android:cursorVisible="true"
+                android:paddingLeft="15dp"
+                android:layout_marginLeft="18dp"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textColor="@color/text_black"
+                android:textSize="29sp" />
+        </LinearLayout>
+        <ImageView
+            android:layout_marginTop="@dimen/dimen_20_dp"
+            android:layout_marginLeft="34.5dp"
+            android:layout_marginRight="34.5dp"
+            android:background="#e2e2e2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0.5_dp" />
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/dimen_21_dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_withdraw_money"
+                android:textSize="14dp"
+                android:textColor="#888888"
+                android:text="可用余额00.00，"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_withdraw_tixian"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/main_color"
+                android:text="全部提现"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </RelativeLayout>
+        <Button
+            android:id="@+id/btn_withdraw_sure"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:text="确定"
+            android:alpha="0.5"
+            android:layout_marginRight="@dimen/dimen_30_dp"
+            android:layout_marginLeft="@dimen/dimen_30_dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_42_dp"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:background="@drawable/add_card_next"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 无数据 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/common_no_data"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/main_di"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:scaleType="center"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_nodata"/>
+
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="您还没有相关救援"
+        android:textColor="#848689"
+        android:textSize="17sp"/>
+
+</LinearLayout>

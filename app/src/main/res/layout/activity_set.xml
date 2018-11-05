@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_di"
+    android:orientation="vertical"
+    tools:context="com.tianjistar.helppersion.activity.persion.SetActivity">
+
+    <include layout="@layout/top_bar_commom"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e1e1e1"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_set_update"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="51dp">
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:text="修改登录密码"
+            android:textSize="15dp"
+            android:textColor="#030303"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e1e1e1"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_set_pay"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="51dp">
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:text="支付密码"
+            android:textSize="15dp"
+            android:textColor="#030303"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e1e1e1"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dimen_10_dp"
+        android:id="@+id/ll_set_about"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="51dp">
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:text="关于天佑"
+            android:textSize="15dp"
+            android:textColor="#030303"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_exit"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginTop="45dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="#030303"
+            android:textSize="17dp"
+            android:text="退出登录"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

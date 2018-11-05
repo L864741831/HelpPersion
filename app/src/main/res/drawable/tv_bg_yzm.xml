@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 项目中白底红字按钮通用的selector样式 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <corners android:radius="2dp"/>
+    <solid android:color="#ffffff"></solid>
+    <stroke android:width="0.5dp" android:color="#f02b2b"/>
+
+
+</shape>

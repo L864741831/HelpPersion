@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/top_bar_commom"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e1e1e1"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_modify_psw"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="51dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15_dp"
+            android:layout_centerVertical="true"
+            android:text="修改支付密码"
+            android:textSize="15dp"
+            android:textColor="#030303"
+            />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:scaleType="center"
+            android:src="@drawable/ic_persion_next"
+            android:layout_width="52dp"
+            android:layout_height="52dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e1e1e1"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_forget_psw"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="51dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15_dp"
+            android:layout_centerVertical="true"
+            android:text="忘记支付密码"
+            android:textSize="15dp"
+            android:textColor="#030303"
+            />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:scaleType="center"
+            android:src="@drawable/ic_persion_next"
+            android:layout_width="52dp"
+            android:layout_height="52dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e1e1e1"
+        />
+
+</LinearLayout>

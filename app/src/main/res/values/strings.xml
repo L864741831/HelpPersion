@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">天佑·救援人员</string>
+
+    <string name="rationale_location">请在设置中允许本应用使用相机权限</string>
+</resources>

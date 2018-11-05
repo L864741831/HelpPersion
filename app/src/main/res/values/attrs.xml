@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="textSize" format="dimension"/>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="NumberPicker">
+        <attr name="normalTextColor" format="color" />
+        <attr name="normalTextSize" format="dimension" />
+        <attr name="selecredTextColor" format="color" />
+        <attr name="selecredTextSize" format="dimension" />
+        <attr name="unitHight" format="dimension" />
+        <attr name="itemNumber" format="integer"/>
+        <attr name="lineColor" format="color" />
+        <attr name="maskHight" format="dimension"/>
+        <attr name="noEmpty" format="boolean"/>
+        <attr name="isEnable" format="boolean"/>
+    </declare-styleable>
+
+    <!--<attr name="textSize" format="dimension" />-->
+
+    <declare-styleable name="IndexBar">
+        <attr name="textSize" />
+        <attr name="pressBackground" format="color" />
+    </declare-styleable>
+    <declare-styleable name="ViewPagerTitle">
+        <attr name="background_content_color" format="color"/>
+        <attr name="defaultTextViewColor" format="color"></attr>
+        <attr name="selectedTextViewColor" format="color"></attr>
+        <attr name="defaultTextViewSize" format="dimension"/>
+        <attr name="selectedTextViewSize" format="dimension"/>
+        <attr name="item_margins" format="dimension"/>
+        <attr name="line_start_color" format="color"/>
+        <attr name="line_end_color" format="color"/>
+        <attr name="line_height" format="integer"/>
+    </declare-styleable>
+
+    <!--<attr name="text" format="string" />-->
+    <attr name="textColor" format="color|reference" />
+    <!--<attr name="textSize" format="dimension" />-->
+    <attr name="lineSpacingExtra" format="dimension" />
+    <attr name="lineSpacingMultiplier" format="float" />
+    <attr name="maxLines" format="integer" />
+
+    <declare-styleable name="VerticalTextView">
+        <attr name="text"/>
+        <attr name="textColor"/>
+        <attr name="textSize"/>
+        <attr name="lineSpacingExtra"/>
+        <attr name="lineSpacingMultiplier"/>
+        <attr name="maxLines"/>
+    </declare-styleable>
+
+    <declare-styleable name="vertical_text">
+       <attr name="textSize"/>
+        <attr name="text" format="string|reference"/>
+    </declare-styleable>
+</resources>
